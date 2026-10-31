@@ -1,5 +1,6 @@
 import { useFetchPhotos } from '../hooks/useFetchPhotos'
 import Spinner from './Spinner'
+import PhotoCard from './PhotoCard'
 
 function Gallery() {
   const { photos, loading, error } = useFetchPhotos()
@@ -10,8 +11,8 @@ function Gallery() {
   }
 
   return (
-    <ul>
-      {photos.map((photo) => <li key={photo.id}>{photo.author}</li>)}
+    <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+      {photos.map((photo) => <PhotoCard key={photo.id} photo={photo} />)}
     </ul>
   )
 }
