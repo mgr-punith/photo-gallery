@@ -1,0 +1,16 @@
+node_modules
+dist
+.env*
+*.log
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.agents/
+.codex/
+.claude/
+.cursor/
+.cursorrules
+.windsurf/
+.aider*
+.github/copilot-instructions.md
+docs/VIDEO_NOTES.md
