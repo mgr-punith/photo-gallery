@@ -1,4 +1,4 @@
-export const FAVOURITES_STORAGE_KEY = 'photo-gallery-favourites'  //easy way it is no env mention needed
+export const FAVOURITES_STORAGE_KEY = 'photo-gallery-favourites'
 
 export function loadFavourites() {
   // Read saved ids when the reducer initializes, instead of on every render.
